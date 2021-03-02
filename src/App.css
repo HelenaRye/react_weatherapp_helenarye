@@ -4,7 +4,6 @@
 
 body,
 html {
-  font-family: sans-serif;
   background: url("../src/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +15,8 @@ html {
 
 .App {
   max-width: 700px;
-  margin: 0px auto;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .Container {
@@ -43,7 +43,9 @@ html {
 #description {
   margin-top: -20px;
 }
-.btn-outline-light {
+
+
+.Form .btn-outline-light {
   border-radius: 30px;
   margin-left: 5px;
   font-size: 15px;
@@ -78,6 +80,7 @@ i {
 .temperature-number {
   font-size: 80px;
 }
+
 h1 {
   font-weight: bold;
   text-transform: capitalize;
@@ -142,4 +145,5 @@ h6 {
 #fahrenheit-symbol,
 #celsius-symbol {
   text-decoration: none;
+  color: white;
 }

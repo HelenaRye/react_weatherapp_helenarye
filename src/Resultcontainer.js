@@ -14,7 +14,7 @@ export default function Resultcontainer() {
     <div className="result-container">
       <div className="row">
         <div className="col-6">
-          <h1>{weatherData.city}</h1>
+          <h1><strong>{weatherData.city}</strong></h1>
           <p className="date">{weatherData.date}</p>
           <p id="description">{weatherData.description}</p>
           <h2>

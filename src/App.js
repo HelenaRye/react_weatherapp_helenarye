@@ -5,7 +5,7 @@ import Form from "./Form.js";
 import Resultcontainer from "./Resultcontainer.js";
 import Forecast from "./Forecast.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="Container">
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+ 
