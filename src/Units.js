@@ -1,6 +1,6 @@
 import "./App.css";
 
-export default function Form() {
+export default function Units() {
   return (
     <div className="units">
       <strong>

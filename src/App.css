@@ -15,6 +15,7 @@ html {
 
 .App {
   max-width: 700px;
+  position:relative;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
@@ -23,10 +24,7 @@ html {
   background: rgb(255, 255, 255, 0.4);
   padding: 30px;
   position: absolute;
-  margin-bottom: 20px;
-  top: 10%;
-  left: 30%;
-  right: 20%;
+  margin: 60px auto;
   width: 50%;
   max-width: 700px;
   width: 500px;
@@ -39,11 +37,6 @@ html {
   padding: 6px 100px 5px 12px;
   border: none;
 }
-
-#description {
-  margin-top: -20px;
-}
-
 
 .Resultcontainer .btn-outline-light {
   border-radius: 30px;
@@ -62,10 +55,10 @@ a {
   color: white;
 }
 
-.units {
+.Units .units {
   display: inline;
   float: right;
-  margin-top: -6%;
+  position: absolute;
 }
 
 .wind-humidity {
@@ -84,12 +77,11 @@ i {
 h1 {
   font-weight: bold;
   text-transform: capitalize;
+  padding-bottom: 5px;
 }
 
-h3 {
-  font-size: 50px;
-  margin-top: 14px;
-  text-align: center;
+p {
+  line-height: 6px;
 }
 
 h2 {
@@ -132,12 +124,12 @@ h6 {
   font-size: 12px;
 }
 
-#celsius-symbol:hover {
+.Units #celsius-symbol:hover {
   color: white;
   text-decoration: underline;
 }
 
-#fahrenheit-symbol:hover {
+.Units #fahrenheit-symbol:hover {
   color: white;
   text-decoration: underline;
 }
