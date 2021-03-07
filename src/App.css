@@ -24,7 +24,7 @@ html {
   background: rgb(255, 255, 255, 0.4);
   padding: 30px;
   position: absolute;
-  margin: 60px auto;
+  margin: 100px auto;
   width: 50%;
   max-width: 700px;
   width: 530px;
@@ -126,7 +126,7 @@ p {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 590px;
+  top: 630px;
   left: 20px;
   color: rgb(255, 255, 255);
   
