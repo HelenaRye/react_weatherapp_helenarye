@@ -27,16 +27,16 @@ html {
   margin: 60px auto;
   width: 50%;
   max-width: 700px;
-  width: 550px;
+  width: 540px;
   border-radius: 20px;
   color: white;
 }
 
 #searchbox {
   border-radius: 20px;
-  padding: 6px 120px 6px 12px;
+  padding: 6px 130px 6px 12px;
   border: none;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .Resultcontainer .btn-outline-light {
@@ -51,9 +51,21 @@ html {
   margin-top: 20px;
 }
 
+ .UnitConversion {
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  letter-spacing: 2px;
+  top: -45px;
+}
+
 a {
   color: white;
 
+}
+
+.text-capitalize {
+padding-bottom: 20px;
 }
 
 .Units .units {
@@ -64,12 +76,14 @@ a {
 .wind-humidity {
   list-style: none;
   text-align: left;
-  margin-top: -20px;
+  margin-top: 160px;
+  padding-left: 30px;
 }
 
 
 .temperature-number {
   font-size: 80px;
+  margin-left: 0px;
 }
 
 h1 {
@@ -104,9 +118,7 @@ p {
   text-align: center;
 }
 
-ul {
-  padding: 170px 0px 0px 70px;
-}
+
 
 h6 {
   display: block;
@@ -118,20 +130,4 @@ h6 {
 
 .fa-github {
   font-size: 12px;
-}
-
-.Units #celsius-symbol:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.Units #fahrenheit-symbol:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-#fahrenheit-symbol,
-#celsius-symbol {
-  text-decoration: none;
-  color: white;
 }
