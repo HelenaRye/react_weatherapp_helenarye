@@ -6,9 +6,12 @@ export default function Footer() {
       <small>
       <i class="fab fa-github"></i>  {" "}
       <a
+        
         href="https://github.com/HelenaRye/react_weatherapp_helenarye"
-        className = "links" 
         target="_blank"
+        rel="noreferrer"
+        className = "links" 
+        
       >
         Open-source code
       </a>
