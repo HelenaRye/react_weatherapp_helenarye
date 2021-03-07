@@ -27,7 +27,7 @@ html {
   margin: 60px auto;
   width: 50%;
   max-width: 700px;
-  width: 540px;
+  width: 530px;
   border-radius: 20px;
   color: white;
 }
@@ -74,7 +74,7 @@ padding-bottom: 20px;
 .wind-humidity {
   list-style: none;
   text-align: left;
-  margin-top: 160px;
+  margin-top: 180px;
   padding-left: 30px;
 }
 
