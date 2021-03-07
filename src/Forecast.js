@@ -1,49 +1,36 @@
+import React, { useState } from "react";
+import axios from "axios";
 import "./App.css";
+import ForecastPreview from "./ForecastPreview.js";
 
-export default function Forecast() {
-  return (
-    <div className="forecast-container">
-      <div className="row align-items-start">
-        <div className="col">
-          <strong> Mon </strong>
-        </div>
-        <div className="col">
-          <strong> Tue </strong>
-        </div>
-        <div className="col">
-          <strong> Wed </strong>
-        </div>
-        <div className="col">
-          <strong> Thurs </strong>
-        </div>
-        <div className="col">
-          <strong> Fri </strong>
-        </div>
-      </div>
-      <div className="row align-items-center">
-        <div className="col">
-          <i className="fas fa-cloud-showers-heavy"></i>
-        </div>
-        <div className="col">
-          <i className="fas fa-cloud"></i>
-        </div>
-        <div className="col">
-          <i className="fas fa-sun"></i>
-        </div>
-        <div className="col">
-          <i className="fas fa-cloud-sun-rain"></i>
-        </div>
-        <div className="col">
-          <i className="fas fa-sun"></i>
-        </div>
-      </div>
-      <div className="row align-items-end">
-        <div className="col">9°</div>
-        <div className="col">12°</div>
-        <div className="col">11°</div>
-        <div className="col">6°</div>
-        <div className="col">5°</div>
-      </div>
+export default function Forecast(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
+
+  function handleForecastResponse(response) {
+       setForecast(response.data);
+       setLoaded(true);
+ 
+  }
+
+  if (loaded && props.city === forecast.city.name)  {
+    return (
+    <div className="Forecast row">
+        <ForecastPreview data={forecast.list[0]}/>
+        <ForecastPreview data={forecast.list[1]}/>
+        <ForecastPreview data={forecast.list[2]}/>
+        <ForecastPreview data={forecast.list[3]}/>
+        <ForecastPreview data={forecast.list[4]}/>
     </div>
-  );
+    );
+
+  } else {
+
+    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
+    axios.get(url).then(handleForecastResponse);
+  
+  return null;
+  }
+
 }
