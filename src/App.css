@@ -22,7 +22,7 @@ html {
 
 .Container {
   background: rgb(255, 255, 255, 0.4);
-  padding: 20px 30px;
+  padding: 30px;
   position: absolute;
   margin: 60px auto;
   width: 50%;
@@ -59,9 +59,6 @@ a {
 .Units .units {
  display: inline;
   position: absolute;
-  left: 420px;
-  top: -60px;
-  z-index: 100;
 }
 
 .wind-humidity {
@@ -78,7 +75,7 @@ a {
 h1 {
   font-weight: bold;
   text-transform: capitalize;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 p {

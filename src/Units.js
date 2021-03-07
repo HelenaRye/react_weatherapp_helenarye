@@ -2,7 +2,7 @@ import "./App.css";
 
 export default function Units() {
   return (
-    <div className="clearfix">
+      <div className="clear-fix">
       <div className="float-right">
       <strong>
         {" "}
@@ -14,6 +14,6 @@ export default function Units() {
         </a>{" "}
       </strong>
       </div>
-    </div>
+      </div>
   );
 }
