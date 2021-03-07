@@ -43,7 +43,7 @@ export default function Resultcontainer(props) {
       <form className="Form" onSubmit={handleSubmit}>
         <input type="text" id="searchbox" placeholder="Enter your city" onChange={handleCityChange} />
   
-        <input type="submit" className="btn btn-outline-light" value="Search" />
+        <input type="submit" className="btn btn-outline-light"  value="Search" />
       </form>
      <WeatherInfo data={weatherData} />
     </div>

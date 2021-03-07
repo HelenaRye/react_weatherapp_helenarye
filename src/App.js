@@ -10,8 +10,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="Container">
+      <Units />
         <Resultcontainer defaultCity="Copenhagen"/>
-        <Units />
         <Forecast />
       </div>
     </div>

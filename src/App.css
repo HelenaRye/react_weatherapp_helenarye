@@ -22,7 +22,7 @@ html {
 
 .Container {
   background: rgb(255, 255, 255, 0.4);
-  padding: 30px;
+  padding: 20px 30px;
   position: absolute;
   margin: 60px auto;
   width: 50%;
@@ -34,13 +34,13 @@ html {
 
 #searchbox {
   border-radius: 20px;
-  padding: 6px 100px 5px 12px;
+  padding: 6px 120px 6px 12px;
   border: none;
+  margin-right: 10px;
 }
 
 .Resultcontainer .btn-outline-light {
   border-radius: 30px;
-  margin-left: 5px;
   font-size: 15px;
   color: #f8f9fa;
   border-color: #f8f9fa;
@@ -53,13 +53,15 @@ html {
 
 a {
   color: white;
+
 }
 
 .Units .units {
-  display: inline;
-  float: right;
+ display: inline;
   position: absolute;
-
+  left: 420px;
+  top: -60px;
+  z-index: 100;
 }
 
 .wind-humidity {
