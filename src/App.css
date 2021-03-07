@@ -58,6 +58,7 @@ html {
   letter-spacing: 2px;
   top: -45px;
   color: #FFF;
+  font-weight: 700;
 }
 
 
@@ -121,7 +122,9 @@ p {
 
  h6 {
   color: rgb(255, 255, 255);
-}
+  display: block;
+  margin: 0 auto;
+ }
 
 .links {
   color: #FFF;
@@ -130,4 +133,3 @@ p {
 .links:hover {
   color: #FFF;
 }
-

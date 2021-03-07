@@ -2,8 +2,7 @@
 import './App.css';
 import React from "react";
 import Resultcontainer from "./Resultcontainer.js";
-import Footer from './Footer';
-
+import Footer from "./Footer.js";
 
 export default function App() {
   return (
